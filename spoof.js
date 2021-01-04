@@ -79,10 +79,11 @@ function enter() {
         counter++;
         change();
     }
-    if (counter == 1) {
+   else if (counter == 1) {
         console.log(document.getElementById('input1').value);
         password = document.getElementById('input1').value;
         counter++;
+        change2();
     }
 }
 
@@ -99,7 +100,7 @@ function change2() {
     input1.value = "";
     input1.type = "password";
     input1.disabled = true;
-    input2.innerHTML = "Enter your password";
+    input2.innerHTML = "You idiot";
     header1.innerHTML = "This was not real";
     header1.style.paddingLeft -= 10;
     header1.style.setProperty("grid-column-end", "11");
